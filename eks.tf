@@ -54,7 +54,6 @@ resource "aws_eks_cluster" "eks" {
     Name        = var.cluster_name
     environment = var.environment
   }
-
 }
 
 
