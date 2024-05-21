@@ -16,5 +16,6 @@ output "cluster_certificate_authority_data" {
 
 output "cluster_id" {  
   description = "The unique ID of the Amazon EKS cluster."
-  value       = try(aws_eks_cluster.eks.cluster_id, "")
+  value       = try(aws_eks_cluster.eks.id, "")
 }
+
